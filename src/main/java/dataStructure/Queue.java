@@ -9,7 +9,8 @@ public class Queue {
       private int length;
 
 
-      public class Node{
+
+    public class Node{
           int value;
           Node next;
 
@@ -19,12 +20,9 @@ public class Queue {
 
       }
 
-      public Queue(int value){
-            Node newNode = new Node(value);
-            first = newNode;
-            last = newNode;
-            length++;
-      }
+    public Queue(int value) {
+
+    }
 
       public void getFirst() {
           if(first != null){
@@ -95,12 +93,12 @@ public class Queue {
         myQueue.enqueue(3);
 
         System.out.println(myQueue.dequeue().value);
-        System.out.println(myQueue.dequeue().value);
-        System.out.println(myQueue.dequeue().value);
+       System.out.println(myQueue.dequeue().value);
+        //System.out.println(myQueue.dequeue().value);
 
         //myQueue.getFirst();
-       // myQueue.getLast();
-       // myQueue.getLength();
+        //myQueue.getLast();
+        //myQueue.getLength();
 
         //myQueue.print();
 
